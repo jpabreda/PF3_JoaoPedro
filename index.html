@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Poupança</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <main>
+      <div class="section">
+
+        <div class="title">Poupança</div>
+
+        <div class="input">
+             <input placeholder="Qual é o seu nome?" type="text" id='nome' required="required">
+        </div>
+
+        <div class="input">
+          <input placeholder="Qual é o valor a ser aplicado mensalmente (R$)? Ex: 1.000,00" type="number" id='valor_mensal' required="required" >
+      </div>
+
+        <div class="input">
+            <input  placeholder="Qual é a taxa de juros (%)? Ex: 10%"  type="number" id='i' required="required">
+        </div>
+
+        <div class="input">
+          <input  placeholder="Qual será o número de parcelas mensais? Ex: 5"  type="number" id='n' required="required">
+      </div>
+        
+        <button id='calcular'>Calcular</button>
+
+        <div class="result" id='resultado'></div>
+
+        <footer> Atenção! A Poupança deve ser interpretado somente por um profissional. </footer>  
+-
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
